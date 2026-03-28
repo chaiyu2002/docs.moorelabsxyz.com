@@ -49,7 +49,7 @@ export default {
     'hello',
     {
       type: 'category',
-      label: 'Tutorial',
+      label: 'Documentation',
       items: ['tutorial-basics/create-a-document'],
     },
   ],
