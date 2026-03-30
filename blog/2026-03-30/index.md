@@ -1,5 +1,5 @@
 ---
-slug: project-progress
+slug: /2026-03-30-project-progress
 title: 03-30 Project Progress
 date: 2026-03-30
 authors: [andy]
