@@ -20,14 +20,7 @@ const config = {
 
   // Set the production url of your site here
   url: 'https://www.moorelabsxya.dev/',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docs.moorelabsxyz.com',
 
   onBrokenLinks: 'throw',
 
@@ -46,10 +39,10 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl:
-            'https://github.com/chaiyu2002/docs.moorelabsxyz.com/tree/main/',
         },
-        blog: false,
+        blog: {
+          blogSidebarCount: 1,
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -77,11 +70,7 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {
-            href: 'https://github.com/chaiyu2002/docs.moorelabsxyz.com',
-            label: 'GitHub',
-            position: 'right',
-          },
+          {to: '/blog', label: 'Blog', position: 'left'},
         ],
       },
       footer: {
@@ -100,10 +89,6 @@ const config = {
             title: 'Links',
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/chaiyu2002/docs.moorelabsxyz.com',
-              },
-              {
                 label: 'Homepage',
                 href: 'https://www.moorelabsxyz.dev/',
               },
@@ -113,8 +98,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/chaiyu2002/docs.moorelabsxyz.com',
+                label: 'Blog',
+                to: '/blog',
               },
             ],
           },
@@ -122,7 +107,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} MooreLabsxyz.`,
       },
       prism: {
-        theme: prismThemes.github,
+        theme: prismThemes.oneLight,
         darkTheme: prismThemes.dracula,
       },
     }),
