@@ -19,7 +19,7 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://www.moorelabsxya.dev/',
+  url: 'https://www.moorelabsxyz.dev/',
   baseUrl: '/',
 
   onBrokenLinks: 'throw',
@@ -48,6 +48,10 @@ const config = {
         },
         blog: {
           blogSidebarCount: 'ALL',
+        },
+        gtag: {
+          trackingID: 'G-FGGCJR7EC7',
+          anonymizeIP: true,
         },
         theme: {
           customCss: './src/css/custom.css',
