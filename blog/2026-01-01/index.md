@@ -7,3 +7,5 @@ tags: [project, progress, update]
 ---
 
 The project officially kicked off today, and we began exploring a new approach to implementing a DEX.
+
+<!-- truncate -->

@@ -17,3 +17,18 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+project:
+  label: Project
+  permalink: /project
+  description: Project updates and notes
+
+progress:
+  label: Progress
+  permalink: /progress
+  description: Progress logs
+
+update:
+  label: Update
+  permalink: /update
+  description: General updates
