@@ -10,6 +10,12 @@ Initially, we refactored `clear-lyquid` and `match-lyquid` so that they are now 
 
 <!-- truncate -->
 
+```mermaid
+flowchart LR
+  A[Order API] -->|place an order| B["instance<br/>clear+match+index"]
+  B -->|commit result on-chain| C[(blockchain)]
+```
+
 At this point, we encountered an issue: every state access involves read-write locking, which indicates the presence of race conditions. This suggests there may be a multi-threaded design involved.
 
 So the question is: how should we leverage the multi-threading capabilities provided by `Lyquor` in this context?
