@@ -21,3 +21,11 @@
   align-items: center;
   justify-content: center;
 }
+
+.heroLink,
+.heroLink:hover,
+.heroLink:visited {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}

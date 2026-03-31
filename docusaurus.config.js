@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'MooreLabsxyz',
-  tagline: 'Documentation and reference',
+  tagline: 'Exploring a New Path for DEX with Lyquor',
   favicon: 'img/favicon.png',
 
   // Future flags.
@@ -70,27 +70,12 @@ const config = {
           src: 'img/site-logo.jpg',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Documentation',
-          },
           {to: '/blog', label: 'Blog', position: 'left'},
         ],
       },
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Documentation',
-                to: '/docs/intro',
-              },
-            ],
-          },
           {
             title: 'Links',
             items: [
