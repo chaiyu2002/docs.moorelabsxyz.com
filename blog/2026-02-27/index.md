@@ -26,15 +26,19 @@ AI-assisted code analysis also came up as a tactical tool rather than a full rep
 
 On the architecture side, one of the more interesting threads was whether an integrated high-core machine model might be more realistic than some of the more fragmented approaches under consideration. The argument was that putting clearing and matching together on a powerful multi-core system could still support large-scale usage even if single-contract performance remained limited. That idea was contrasted with another model that was seen as prone to internal congestion and operational instability.
 
-In the nearer term, the implementation plan is more concrete. The team is preparing to turn the `clear` service and the `match` service into two separate Lyquid components, with the immediate goal of completing the Lyquor integration work required to make that structure operational. This gives the architecture discussion a practical next step: instead of debating abstraction in the abstract, the system can be pushed forward through an actual service-level integration path.
+In the nearer term, the implementation plan is more concrete. The team is preparing to turn the `clear` service and the `match` service into two separate Lyquid components, each with its own **network entry**, with the immediate goal of completing the Lyquor integration work required to make that structure operational. This gives the architecture discussion a practical next step: instead of debating abstraction in the abstract, the system can be pushed forward through an actual service-level integration path.
 
 ```mermaid
 flowchart LR
+  Z[Index price service]
   A[API order placement service] <--> B
-  subgraph B[Lyquor node]
-    C[clear lyquid]
-    D[match lyquid]
+  subgraph B[Lyquor<br/>node]
+    direction TB
+    C["[network]<br/>clear"]
+    D["[network]<br/>match"]
   end
+  Z --> C
+  Z --> D
   C <--> D
   B <--> E[backend]
 ```
