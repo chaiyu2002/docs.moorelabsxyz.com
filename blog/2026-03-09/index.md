@@ -23,7 +23,7 @@ flowchart LR
   B <--> E[backend]
 ```
 
-This diagram reflects the architecture concept discussed on February 27. See the earlier post [here](/2026-02-27-contract-testing-and-architecture-tradeoffs).
+This diagram reflects the architecture concept discussed on February 27. See the earlier post [here](/blog/2026-02-27-contract-testing-and-architecture-tradeoffs).
 
 <!-- truncate -->
 
