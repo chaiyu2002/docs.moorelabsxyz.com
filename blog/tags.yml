@@ -1,22 +1,7 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
-
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
-
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
-
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+architecture:
+  label: Architecture
+  permalink: /architecture
+  description: Architecture notes and tradeoffs
 
 project:
   label: Project
@@ -27,6 +12,11 @@ progress:
   label: Progress
   permalink: /progress
   description: Progress logs
+
+strategy:
+  label: Strategy
+  permalink: /strategy
+  description: Strategy notes
 
 update:
   label: Update
