@@ -5,7 +5,8 @@
 ## 基本命令
 
 - 安装依赖：`yarn`
-- 本地开发：`yarn start`
+- 默认英文开发：`yarn start`
+- 中文开发预览：`yarn start:zh`
 - 生产构建校验：`yarn build`
 
 使用 Node.js 20 或更高版本。GitHub Pages CI 当前使用 Node 20 和 npm。
@@ -13,6 +14,7 @@
 ## 项目约定
 
 - 本地开发命令优先使用 yarn。
+- Docusaurus 开发模式一次只服务一个 locale；预览中文路径时使用 `yarn start:zh`。
 - 不要无明确原因更新锁文件。
 - 文档内容位于 `docs/`。
 - 博客文章位于 `blog/YYYY-MM-DD/index.md`。

@@ -22,3 +22,11 @@ update:
   label: Update
   permalink: /update
   description: General updates
+hyperevm:
+  label: HyperEVM
+  permalink: /hyperevm
+  description: HyperEVM notes and comparisons
+lyquor:
+  label: Lyquor
+  permalink: /lyquor
+  description: Lyquor architecture and product notes
