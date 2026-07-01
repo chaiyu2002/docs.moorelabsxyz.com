@@ -14,7 +14,13 @@ yarn
 yarn start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+This starts the default English development server. To preview the Chinese locale, run:
+
+```bash
+yarn start:zh
+```
+
+Docusaurus development mode serves one locale at a time. Most changes are reflected live without having to restart the server.
 
 ## Build
 

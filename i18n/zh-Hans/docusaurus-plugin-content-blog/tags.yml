@@ -1,0 +1,34 @@
+architecture:
+  label: 架构
+  permalink: /architecture
+  description: 架构记录与权衡
+
+project:
+  label: 项目
+  permalink: /project
+  description: 项目更新与记录
+
+progress:
+  label: 进展
+  permalink: /progress
+  description: 进展日志
+
+strategy:
+  label: 策略
+  permalink: /strategy
+  description: 策略记录
+
+update:
+  label: 更新
+  permalink: /update
+  description: 通用更新
+
+hyperevm:
+  label: HyperEVM
+  permalink: /hyperevm
+  description: HyperEVM 记录与对比
+
+lyquor:
+  label: Lyquor
+  permalink: /lyquor
+  description: Lyquor 架构与产品记录

@@ -30,12 +30,19 @@ const config = {
 
   themes: ['@docusaurus/theme-mermaid'],
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'zh-Hans'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        htmlLang: 'en-US',
+      },
+      'zh-Hans': {
+        label: '中文',
+        htmlLang: 'zh-CN',
+      },
+    },
   },
 
   presets: [
@@ -75,6 +82,7 @@ const config = {
         },
         items: [
           {to: '/blog', label: 'Blog', position: 'left'},
+          {type: 'localeDropdown', position: 'right'},
         ],
       },
       footer: {
