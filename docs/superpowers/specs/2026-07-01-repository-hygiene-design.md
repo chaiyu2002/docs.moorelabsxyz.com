@@ -1,38 +1,38 @@
-# Repository Hygiene Design
+# 仓库整理设计
 
-Date: 2026-07-01
+日期：2026-07-01
 
-## Goal
+## 目标
 
-Clean up the Docusaurus documentation repository so future reviews and deploys are easier to trust. The change is intentionally limited to repository hygiene and template cleanup, not a redesign of the site or a rewrite of project content.
+整理这个 Docusaurus 文档仓库，让后续 review 和部署结果更容易判断、追踪和信任。本次变更刻意限制在仓库卫生和模板残留清理范围内，不做站点重新设计，也不重写项目内容。
 
-## Scope
+## 范围
 
-- Add a repository line-ending policy so text files normalize to LF and stop producing whole-file CRLF diffs.
-- Normalize existing text files after the policy is added.
-- Keep npm as the canonical package manager because the GitHub Pages workflow already uses `npm ci` and `npm run build`.
-- Update README commands to match npm.
-- Remove Docusaurus sample authors and sample tags that are not used by the MooreLabsxyz posts.
-- Replace placeholder homepage metadata with MooreLabsxyz-specific title and description.
+- 增加仓库行尾策略，让文本文件统一规范化为 LF，避免继续产生整文件 CRLF diff。
+- 增加行尾策略后，规范化现有文本文件。
+- 保持 npm 作为唯一标准包管理路径，因为 GitHub Pages workflow 已经使用 `npm ci` 和 `npm run build`。
+- 更新 README 中的命令，使其与 npm 路径一致。
+- 移除 MooreLabsxyz 博客文章没有使用的 Docusaurus 示例作者和示例标签。
+- 将首页占位 metadata 替换为 MooreLabsxyz 相关的 title 和 description。
 
-## Out Of Scope
+## 不在范围内
 
-- Adding new site sections or changing the visual design.
-- Rewriting blog post content.
-- Changing the deployment target, domain, analytics ID, or Docusaurus version.
-- Removing `yarn.lock` unless implementation confirms it is safe and consistent with the npm-only decision.
+- 新增站点栏目或调整视觉设计。
+- 重写博客文章内容。
+- 修改部署目标、域名、analytics ID 或 Docusaurus 版本。
+- 删除 `yarn.lock`，除非实现时确认这样做安全，并且与 npm-only 决策一致。
 
-## Implementation Notes
+## 实现说明
 
-Use a minimal `.gitattributes` file to set text normalization. After adding it, re-normalize tracked text files so the diff reflects real content changes instead of line-ending churn. Keep edits small and reviewable.
+使用最小化的 `.gitattributes` 文件设置文本规范化。添加后，重新规范化已跟踪的文本文件，让 diff 反映真实内容变化，而不是行尾变化。改动应保持小而可 review。
 
-For author and tag metadata, keep `andy` and the tags currently referenced by blog posts. Remove unused Docusaurus template entries such as example authors and placeholder tags.
+对于作者和标签 metadata，保留 `andy` 以及当前博客文章实际引用的标签。移除未使用的 Docusaurus 模板项，例如示例作者和占位标签。
 
-For homepage metadata, keep the current simple hero and Lyquor link. Only replace the generic `Hello from...` title and placeholder description used in the `Layout` component.
+对于首页 metadata，保留当前简单 hero 和 Lyquor 链接。只替换 `Layout` 组件中通用的 `Hello from...` title 和占位 description。
 
-## Verification
+## 验证
 
-- Run `git diff --check` to catch whitespace and line-ending problems.
-- Run `npm ci` if dependencies are missing or incomplete.
-- Run `npm run build` to verify Docusaurus can produce the static site.
-- Inspect `git diff --stat` to confirm the final diff is explainable and not dominated by accidental line-ending churn.
+- 运行 `git diff --check`，检查空白字符和行尾问题。
+- 如果依赖缺失或不完整，运行 `npm ci`。
+- 运行 `npm run build`，确认 Docusaurus 可以生成静态站点。
+- 检查 `git diff --stat`，确认最终 diff 可解释，并且没有被意外行尾变化主导。
