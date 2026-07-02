@@ -76,6 +76,66 @@ status meanings, and architectural assumptions aligned.
 
 That sentence condenses several parts of the article into one higher-level point.
 
+## External Reference Posts
+
+Some blog posts use an external project as a reference case. For these posts, the
+X post should not summarize the external project as the main subject. It should
+extract the external project's business pattern and connect that pattern back to
+Lyquor.
+
+For the Hyperliquid, HyperEVM, and HyperCall topic, the X post's main direction
+should be:
+
+```text
+Reference Hyperliquid's business shape to explain Lyquor's own application-layer
+thesis.
+```
+
+The post should first name the pattern:
+
+```text
+Hyperliquid is becoming more than a perp exchange: HyperCore provides the
+financial core, HyperEVM adds a programmable application layer, and HyperCall
+shows specialized trading products being built close to liquidity and account
+state.
+```
+
+Then it should turn that into the Lyquor point:
+
+```text
+For Lyquor, the lesson is not to copy HyperEVM's EVM surface. It is to make
+exchange logic itself run as sequenced Lyquid network applications with shared
+state and richer runtime services.
+```
+
+The X post should preserve two separate themes:
+
+- External-reference theme: what Hyperliquid's current business shape reveals.
+- Lyquor thesis theme: how that pattern supports Lyquor's own architecture.
+
+For this kind of article, use this compression path:
+
+```text
+external business pattern
+-> why the pattern works
+-> Lyquor's corresponding design
+-> why that design could be different or stronger
+```
+
+Avoid writing the X post as:
+
+```text
+HyperCall is an options venue on Hyperliquid.
+```
+
+That is only background. The public takeaway should be closer to:
+
+```text
+HyperEVM makes Hyperliquid's financial core programmable through contracts.
+Lyquor's stronger idea is to make exchange services themselves run as ordered,
+shared-state network applications.
+```
+
 ## Bilingual Pattern
 
 When writing both English and Chinese versions, treat the Chinese version as an
