@@ -87,7 +87,7 @@ For the Hyperliquid, HyperEVM, and HyperCall topic, the X post's main direction
 should be:
 
 ```text
-Reference Hyperliquid's business shape to explain Lyquor's own application-layer
+Reference Hyperliquid's business shape to explain Lyquor's trading-infrastructure
 thesis.
 ```
 
@@ -95,23 +95,35 @@ The post should first name the pattern:
 
 ```text
 Hyperliquid is becoming more than a perp exchange: HyperCore provides the
-financial core, HyperEVM adds a programmable application layer, and HyperCall
-shows specialized trading products being built close to liquidity and account
-state.
+specialized trading infrastructure, HyperEVM adds a programmable application
+layer, and HyperCall shows specialized trading products being built close to
+liquidity and account state.
 ```
 
 Then it should turn that into the Lyquor point:
 
 ```text
-For Lyquor, the lesson is not to copy HyperEVM's EVM surface. It is to make
-exchange logic itself run as sequenced Lyquid network applications with shared
-state and richer runtime services.
+If this kind of business were implemented on Lyquor, exchange modules such as
+matching, clearing, risk, margin, liquidation, and oracle-driven settlement could
+become sequenced Lyquid network applications.
 ```
+
+The key distinction to preserve is:
+
+```text
+HyperCore is specialized trading infrastructure.
+Lyquor exposes the capability to build specialized trading infrastructure.
+```
+
+When the X post mentions runtime, keep the wording concrete. Do not imply that
+the Lyquid modules themselves are the runtime services. The modules are the
+business applications; Lyquor runtime capabilities are what let them execute,
+call each other, access state, and coordinate.
 
 The X post should preserve two separate themes:
 
 - External-reference theme: what Hyperliquid's current business shape reveals.
-- Lyquor thesis theme: how that pattern supports Lyquor's own architecture.
+- Lyquor thesis theme: how that pattern supports Lyquor's own trading-infrastructure architecture.
 
 For this kind of article, use this compression path:
 
@@ -131,9 +143,9 @@ HyperCall is an options venue on Hyperliquid.
 That is only background. The public takeaway should be closer to:
 
 ```text
-HyperEVM makes Hyperliquid's financial core programmable through contracts.
-Lyquor's stronger idea is to make exchange services themselves run as ordered,
-shared-state network applications.
+If implemented on Lyquor, matching, clearing, risk, margin, liquidation, and
+settlement could become ordered Lyquid network applications that share state and
+coordinate through Lyquor runtime capabilities.
 ```
 
 ## Bilingual Pattern

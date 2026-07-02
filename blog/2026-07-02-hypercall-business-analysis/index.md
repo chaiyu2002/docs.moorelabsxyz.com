@@ -8,9 +8,9 @@ tags: [strategy, hyperevm, hyperliquid, hypercall, options]
 
 ## Summary
 
-HyperCall is useful not only as an options venue case study, but also as a window into a broader Hyperliquid pattern. Hyperliquid is no longer just a high-performance perp exchange. With HyperCore, HyperEVM, and application-layer products such as HyperCall, it is moving toward a financial application platform: a trading core with liquidity, an application layer for programmable settlement, and specialized products built close to that financial state.
+HyperCall is useful not only as an options venue case study, but also as a window into a broader Hyperliquid pattern. Hyperliquid is no longer just a high-performance perp exchange. With HyperCore, HyperEVM, and application-layer products such as HyperCall, it is moving toward a financial application platform: HyperCore is the specialized trading infrastructure, HyperEVM opens a programmable application surface around it, and specialized products can be built close to that financial state.
 
-The important question for Lyquor is not "how do we copy HyperEVM?" A better question is: if these Hyperliquid-style businesses were built on Lyquor, what would become easier, more native, or more differentiated?
+The important question for Lyquor is: if this class of business were built on Lyquor, what would become easier, more native, or more differentiated? The key distinction is that HyperCore is a purpose-built trading infrastructure, while Lyquor exposes the capability for developers to build specialized trading infrastructure as Lyquid network applications.
 
 <!-- truncate -->
 
@@ -18,15 +18,15 @@ The short answer:
 
 ```text
 Hyperliquid's pattern:
-Financial core + programmable application layer + specialized trading applications.
+Specialized trading infrastructure + programmable application layer + specialized trading applications.
 
 Lyquor's opportunity:
-Sequenced exchange applications + shared network state + richer runtime services.
+Open capability to build trading infrastructure as sequenced Lyquid applications.
 ```
 
 ## The Hyperliquid Pattern
 
-Hyperliquid's core product strength is market structure. HyperCore provides the high-performance trading and financial state: order books, spot/perp liquidity, clearing, assets, vaults, staking, and oracle-driven state. That creates a strong base layer for active financial applications.
+Hyperliquid's core product strength is market structure. HyperCore provides a purpose-built trading infrastructure: order books, spot/perp liquidity, clearing, assets, vaults, staking, and oracle-driven state. That creates a strong base layer for active financial applications.
 
 HyperEVM then adds the programmable layer. Its role is not simply "EVM support." It gives developers a familiar contract surface next to HyperCore, so applications can use Ethereum-style tooling while staying close to Hyperliquid's liquidity and account state.
 
@@ -38,7 +38,7 @@ HyperCall shows why that matters. An options venue cannot live only as a fronten
 - RFQ, RPI, multi-leg strategy, and market-maker protection features.
 - A standard integration surface for wallets, APIs, bots, and future protocols.
 
-So HyperCall's strategic value is not just "SpaceX options" or "SP500 options." It demonstrates how a specialized derivatives application can be built close to Hyperliquid's financial core.
+So HyperCall's strategic value is not just "SpaceX options" or "SP500 options." It demonstrates how a specialized derivatives application can be built close to Hyperliquid's specialized trading infrastructure.
 
 ## Why HyperEVM Fits HyperCall
 
@@ -73,15 +73,22 @@ This is a pragmatic split. HyperEVM does not replace the matching engine, and it
 
 The Lyquor comparison should not start from EVM compatibility. It should start from the business need: these products need ordered execution, shared state, reliable settlement, rich risk logic, and external integration.
 
-Lyquor's corresponding shape is not "EVM contracts next to HyperCore." It is sequenced Lyquid network applications running next to shared network state and runtime services.
+The sharper distinction is this:
+
+```text
+HyperCore = specialized trading infrastructure already built by Hyperliquid
+Lyquor = open capability for developers to build specialized trading infrastructure
+```
+
+So a Lyquor implementation should not be described as "EVM contracts next to HyperCore." It should be described as exchange infrastructure modules implemented as sequenced Lyquid network applications, coordinated by shared network state and runtime capabilities.
 
 ```text
 HyperCall on HyperEVM:
 Use EVM contracts as the account, margin, settlement, and liquidation layer next to HyperCore liquidity.
 
-HyperCall-like app on Lyquor:
-Use Lyquid network applications as the account, margin, settlement, risk, and exchange-service layer,
-with on-chain sequencing for order and state-transition ordering.
+HyperCall-like business on Lyquor:
+Build the account, margin, settlement, risk, and exchange-service infrastructure
+as Lyquid network applications, with sequencing for order and state-transition ordering.
 ```
 
 This matters because many trading-system functions are more like exchange services than simple smart contracts. Portfolio margin, multi-leg option strategy execution, liquidation workflows, oracle-driven settlement, and market-maker protections are complex, evolving, stateful systems. Forcing all of that into Solidity contracts can make the system expensive, rigid, and hard to upgrade.
@@ -124,7 +131,7 @@ The second advantage is clearer sequencing. Trading systems need deterministic o
 
 The third advantage is service decomposition. HyperEVM's familiar unit is the contract. Lyquor's more natural unit is the Lyquid application. That makes it easier to split a complex venue into match, clear, risk, and oracle components while keeping them under a shared network execution model.
 
-The fourth advantage is internal flexibility. External users may still interact through Ethereum-compatible addresses, ABI-like interfaces, JSON-RPC, wallet signatures, or sequencing contracts. Internally, the product can use Lyquid/WASM and runtime services instead of being constrained by Solidity and EVM execution.
+The fourth advantage is internal flexibility. External users may still interact through Ethereum-compatible addresses, ABI-like interfaces, JSON-RPC, wallet signatures, or sequencing contracts. Internally, the product can use Lyquid/WASM and runtime capabilities instead of being constrained by Solidity and EVM execution.
 
 The fifth advantage is a stronger path toward exchange operating infrastructure. HyperEVM gives Hyperliquid applications a contract settlement layer. Lyquor can potentially host more of the exchange stack itself: matching coordination, clearing, margin, risk, liquidation, oracle settlement, and account state as sequenced network applications.
 
@@ -141,7 +148,7 @@ Another tradeoff is maturity. Hyperliquid already has live liquidity and a visib
 Hyperliquid's current direction shows a useful product pattern:
 
 ```text
-Liquidity core -> programmable settlement/application layer -> specialized financial applications
+Specialized trading infrastructure -> programmable settlement/application layer -> specialized financial applications
 ```
 
 HyperCall is one example of that pattern. It uses HyperEVM because options need to stay close to HyperCore liquidity, hedging, margin, settlement, and account state.
@@ -149,12 +156,12 @@ HyperCall is one example of that pattern. It uses HyperEVM because options need 
 For Lyquor, the opportunity is different and potentially broader:
 
 ```text
-Sequencing layer -> Lyquid network applications -> shared exchange state and runtime services
+Sequencing layer -> Lyquid network applications -> developer-built trading infrastructure
 ```
 
-If HyperEVM makes Hyperliquid's financial core programmable through contracts, Lyquor can make exchange logic itself run as sequenced network applications. That means a HyperCall-like product on Lyquor would not merely have a settlement layer. It could express matching, clearing, risk, margin, liquidation, and oracle-driven settlement as coordinated Lyquid applications.
+If HyperEVM makes Hyperliquid's specialized trading infrastructure programmable through contracts, Lyquor opens the ability to build that kind of infrastructure directly as sequenced network applications. That means a HyperCall-like product on Lyquor would not merely have a settlement layer. Its matching, clearing, risk, margin, liquidation, and oracle-driven settlement modules could become coordinated Lyquid applications.
 
-That is the main product insight: Lyquor's advantage is not copying HyperEVM's EVM surface. Its advantage is turning complex exchange services into ordered, shared-state, runtime-powered network applications.
+That is the main product insight: HyperCore is specialized trading infrastructure; Lyquor is an environment for building specialized trading infrastructure.
 
 ## References
 
