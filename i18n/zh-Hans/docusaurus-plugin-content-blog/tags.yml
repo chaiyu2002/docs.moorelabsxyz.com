@@ -32,3 +32,18 @@ lyquor:
   label: Lyquor
   permalink: /lyquor
   description: Lyquor 架构与产品记录
+
+hyperliquid:
+  label: Hyperliquid
+  permalink: /hyperliquid
+  description: Hyperliquid 生态记录
+
+hypercall:
+  label: HyperCall
+  permalink: /hypercall
+  description: HyperCall 业务与架构记录
+
+options:
+  label: 期权
+  permalink: /options
+  description: 期权市场结构与产品记录

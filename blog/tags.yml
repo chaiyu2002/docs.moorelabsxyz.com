@@ -30,3 +30,18 @@ lyquor:
   label: Lyquor
   permalink: /lyquor
   description: Lyquor architecture and product notes
+
+hyperliquid:
+  label: Hyperliquid
+  permalink: /hyperliquid
+  description: Hyperliquid ecosystem notes
+
+hypercall:
+  label: HyperCall
+  permalink: /hypercall
+  description: HyperCall business and architecture notes
+
+options:
+  label: Options
+  permalink: /options
+  description: Options market structure and product notes
