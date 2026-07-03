@@ -14,7 +14,7 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">
-          Exploring a New Path for DEX with{' '}
+          Exploring Financial Products and Infrastructure on{' '}
           <a
             className={styles.heroLink}
             href="https://docs.lyquor.dev/"
@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <Layout
       title={siteConfig.title}
-      description="MooreLabsxyz documents project progress and research notes for a new DEX path with Lyquor.">
+      description="MooreLabsxyz documents project progress and research notes for financial products and infrastructure on Lyquor.">
       <HomepageHeader />
     </Layout>
   );

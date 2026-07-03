@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'MooreLabsxyz',
-  tagline: 'Exploring a New Path for DEX with Lyquor',
+  tagline: 'Exploring Financial Products and Infrastructure on Lyquor',
   favicon: 'img/favicon.png',
 
   // Future flags.
