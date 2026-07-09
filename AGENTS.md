@@ -18,6 +18,8 @@
 - 不要无明确原因更新锁文件。
 - 文档内容位于 `docs/`。
 - 博客文章位于 `blog/YYYY-MM-DD/index.md`。
+- 默认 locale 是英文，默认博客目录 `blog/` 只放英文原文；中文博客放在 `i18n/zh-Hans/docusaurus-plugin-content-blog/YYYY-MM-DD/index.md`，不要把英文原文直接改成中文。
+- Blog 的 Recent posts 列表显示 frontmatter `title`，不会自动从 `date` 字段添加日期；如需和现有文章一致，标题需要手动带 `MM-DD` 前缀，例如 `07-03 ...`。
 - 静态资源位于 `static/`。
 - 站点配置位于 `docusaurus.config.js`。
 - 侧边栏配置位于 `sidebars.js`。
