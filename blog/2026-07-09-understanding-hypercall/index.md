@@ -8,6 +8,10 @@ tags: [architecture, hyperevm, hyperliquid, hypercall, options]
 
 ## Summary
 
+From the Lyquor perspective, HyperCall is useful not only because it is an options product, but because it shows what kind of financial application starts to appear once a chain has specialized trading infrastructure, shared account state, oracle data, and a programmable application layer.
+
+This post uses HyperCall as a reference case: first to understand the business shape emerging around Hyperliquid, then to ask what the same class of trading application could look like if matching, clearing, risk, margin, liquidation, and settlement were built as sequenced Lyquid network applications on Lyquor.
+
 HyperCall is easiest to misunderstand if it is treated as a pure on-chain options protocol. Its current design is more practical and more hybrid: a professional off-chain options trading system, a HyperEVM contract layer for accounts and verifiable execution boundaries, and HyperCore as the underlying source of spot/perp liquidity, clearing state, oracle data, and future margin integration.
 
 In one sentence:
@@ -274,6 +278,8 @@ spot/perp liquidity, clearinghouse state, oracle data, balances, positions, and 
 The important architecture lesson is not that every part of options trading has moved on-chain. It is that HyperCall puts a specialized options venue next to Hyperliquid's financial core, then uses HyperEVM to draw a programmable and verifiable boundary around accounts, assets, settlement, and selected execution flows.
 
 That makes HyperCall a useful case study for how application-layer financial products may develop around Hyperliquid: not as isolated smart contracts, and not as ordinary centralized services, but as hybrid systems built around a specialized on-chain financial stack.
+
+For Lyquor, the takeaway is not to copy HyperCall's exact backend-contract-core split. The more important lesson is that modern financial applications need more than isolated contracts: they need ordered execution, shared state, risk-aware modules, settlement logic, and external integration surfaces. Lyquor's thesis is that these pieces can be expressed as sequenced Lyquid network applications, rather than being forced into either a centralized backend or isolated EVM contracts.
 
 ## References
 

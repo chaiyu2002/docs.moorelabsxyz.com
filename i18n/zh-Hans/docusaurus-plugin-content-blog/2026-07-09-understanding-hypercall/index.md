@@ -8,6 +8,10 @@ tags: [architecture, hyperevm, hyperliquid, hypercall, options]
 
 ## 摘要
 
+从 Lyquor 的视角看，HyperCall 的价值不只是“一个期权产品”，而是它展示了当一条链已经具备专业交易基础设施、共享账户状态、oracle 数据和可编程应用层之后，会自然长出什么样的金融业务形态。
+
+这篇文章把 HyperCall 当作一个参考案例：先理解 Hyperliquid 周围正在出现的业务形态，再反过来思考，如果同一类交易应用构建在 Lyquor 上，撮合、清算、风控、保证金、清算和结算是否可以成为有序执行、共享状态的 Lyquid network applications。
+
 如果把 HyperCall 理解成一个纯链上期权协议，很容易误判它的真实结构。它当前更像一个务实的混合系统：链下专业期权交易系统、HyperEVM 上的账户和可验证执行边界，以及作为底层金融状态的 HyperCore，包括 spot/perp 流动性、清算状态、oracle 数据和未来保证金整合基础。
 
 一句话概括：
@@ -274,6 +278,8 @@ spot/perp 流动性、clearinghouse state、oracle 数据、余额、仓位和 h
 最重要的架构启发不是“期权交易的每个部分都已经上链”。更准确地说，HyperCall 把一个专业期权交易场所放在 Hyperliquid 金融核心旁边，再用 HyperEVM 围绕账户、资产、结算和部分执行流程画出可编程、可验证的边界。
 
 这让 HyperCall 成为观察 Hyperliquid 应用层金融产品如何发展的一个有用案例：它不是孤立智能合约，也不是普通中心化服务，而是围绕专业链上金融栈构建的混合系统。
+
+对 Lyquor 来说，重点不是复制 HyperCall 现在的 Backend、合约和 HyperCore 分工。更重要的启发是，现代金融应用需要的不只是孤立合约，还需要有序执行、共享状态、具备风控能力的业务模块、结算逻辑和外部集成界面。Lyquor 的 thesis 是，这些部分可以被表达成有序执行的 Lyquid network applications，而不是被迫二选一地放进中心化 Backend 或孤立的 EVM 合约里。
 
 ## 参考资料
 
