@@ -216,6 +216,22 @@ Keep established project terms and identifiers consistent, including `swap`,
 and Chinese posts back to back. Use a later reply, a separate follow-up, or a
 weekly Chinese summary when that creates a better reader experience.
 
+## Preserve the Causal Chain During Compression
+
+When research communication maps an external reference to Lyquor, compression
+must not remove the bridge between an external fact and a Lyquor inference. Two
+supported statements placed next to each other may still create an unsupported
+causal claim.
+
+Check that each sentence answers why the next sentence follows:
+
+```text
+reference case
+  -> requirement it actually demonstrates
+  -> Lyquor-specific consequence or candidate design
+  -> CTA that follows from the unresolved issue
+```
+
 ## Source-to-Post Verification
 
 Before publishing, compare the X draft with its source material:
@@ -236,9 +252,13 @@ Before publishing, compare the X draft with its source material:
 - [ ] The post contains one main claim and has value without the link.
 - [ ] The hook is accurate, specific, and supported by the body.
 - [ ] Facts, inferences, candidate designs, and open questions keep their source certainty.
+- [ ] Every causal transition is supported; the external reference is not
+      credited with behavior introduced only by the Lyquor mapping.
 - [ ] Wording does not imply that Moore is the Lyquor project team.
 - [ ] The external project is a reference case rather than an accidental product summary.
 - [ ] The CTA asks one specific question or directs one action.
+- [ ] The CTA follows directly from a problem, finding, or unresolved issue
+      established immediately before it.
 - [ ] Hashtags and mentions are absent unless directly useful.
 - [ ] Any image is quickly understandable on mobile.
 - [ ] Any measured link uses consistent UTM parameters.

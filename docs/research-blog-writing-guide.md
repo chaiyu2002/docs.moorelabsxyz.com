@@ -184,6 +184,33 @@ Each article must add at least one original artifact or finding, such as:
 - performance, cost, or reliability evidence;
 - a counterexample showing why an intuitive claim fails.
 
+## Causal and Narrative Coherence
+
+Individually accurate sentences can still imply an unsupported causal
+relationship when placed together.
+
+Preserve this chain explicitly:
+
+```text
+external fact
+  -> mechanism or business requirement
+  -> Moore inference
+  -> Lyquor candidate mapping
+  -> unresolved question
+```
+
+Do not attribute a behavior introduced by the Lyquor mapping to the external
+reference system. If a conclusion depends on an unstated assumption, state the
+missing bridge.
+
+At paragraph level, each sentence should state a claim, supply evidence or a
+mechanism, explain an implication, or introduce the next question. When the
+subject changes from the reference system to Lyquor, name the new subject rather
+than relying on adjacency or an ambiguous pronoun.
+
+Use connectors such as `because`, `so`, `therefore`, `but`, and `which raises
+the question` only when the preceding sentence supports that relationship.
+
 ## Mapping External Systems to Lyquor
 
 Start with the external business shape, not a component-by-component vocabulary
@@ -293,6 +320,8 @@ translate word for word. Keep project vocabulary and identifiers consistent.
 - [ ] The post contains at least one original artifact, finding, or verification.
 - [ ] External facts use official or primary sources.
 - [ ] Facts, observations, inferences, candidate designs, and open questions are distinguishable.
+- [ ] Every causal transition is supported; the external reference is not
+      credited with behavior introduced only by the Lyquor mapping.
 - [ ] Claims about Lyquor match its current evidence and maturity.
 - [ ] Pronouns and ownership language do not imply Moore is the Lyquor team.
 - [ ] The key difference from the existing product or service is explained.
@@ -301,4 +330,6 @@ translate word for word. Keep project vocabulary and identifiers consistent.
 - [ ] `<!-- truncate -->` creates a useful list-page excerpt.
 - [ ] Relevant internal links are present.
 - [ ] The ending contains one takeaway and one CTA.
+- [ ] The CTA follows directly from a problem, finding, or unresolved issue
+      established in the preceding section.
 - [ ] English and Chinese versions preserve the same technical meaning and boundaries.
