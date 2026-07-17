@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Blog Analysis Writing Guide
+# Research Blog Writing Guide
 
 This guide defines how MooreLabsxyz writes research posts about Lyquor, DEXs,
 prediction markets, and financial infrastructure. Hyperliquid, HyperEVM, and
