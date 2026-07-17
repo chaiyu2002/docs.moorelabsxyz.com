@@ -1,4 +1,4 @@
-# 07-14 What trade[XYZ] Reveals About Market Operations
+# 07-14 From trade[XYZ] to Lyquor: Validating Market Updates
 
 Related blog post: `blog/2026-07-14-tradexyz-lyquor-market-operations-layer/index.md`
 

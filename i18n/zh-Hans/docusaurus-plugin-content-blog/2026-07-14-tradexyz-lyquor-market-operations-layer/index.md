@@ -1,11 +1,11 @@
 ---
 slug: /2026-07-14-tradexyz-lyquor-market-operations-layer
-title: "07-14 trade[XYZ] 揭示了怎样的市场运营难题？"
+title: "07-14 从 trade[XYZ] 到 Lyquor：如何验证市场更新"
 date: 2026-07-14
 authors: [andy]
 tags: [lyquor, hyperliquid, trade-xyz, architecture, oracles]
 description: "为什么 24/7 传统资产永续合约需要独立的市场运营层，以及 Lyquor 如何把外部观测与有序共享状态分开。"
-image: /img/blog/tradexyz-market-operations-layer.png
+image: /img/blog/tradexyz-market-operations-layer.jpg
 keywords: [lyquor, tradeXYZ, 市场运营, oracle, 传统资产永续合约]
 ---
 

@@ -1,11 +1,11 @@
 ---
 slug: /2026-07-14-tradexyz-lyquor-market-operations-layer
-title: "07-14 What trade[XYZ] Reveals About Market Operations"
+title: "07-14 From trade[XYZ] to Lyquor: Validating Market Updates"
 date: 2026-07-14
 authors: [andy]
 tags: [lyquor, hyperliquid, trade-xyz, architecture, oracles]
 description: "Why 24/7 traditional-asset perpetuals need a market operations layer, and how Lyquor could separate external observations from ordered shared state."
-image: /img/blog/tradexyz-market-operations-layer.png
+image: /img/blog/tradexyz-market-operations-layer.jpg
 keywords: [lyquor, tradeXYZ, market operations, oracle, traditional-asset perpetuals]
 ---
 
