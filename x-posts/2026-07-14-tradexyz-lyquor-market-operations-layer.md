@@ -1,23 +1,15 @@
-# 07-14 From trade[XYZ] to Lyquor
+# 07-14 What trade[XYZ] Reveals About Market Operations
 
 Related blog post: `blog/2026-07-14-tradexyz-lyquor-market-operations-layer/index.md`
 
 ## English
 
-trade[XYZ] reveals the market operations layer between external venues and a trading engine: pricing, oracle validation, risk parameters, and lifecycle actions.
+trade[XYZ] shows why 24/7 traditional-asset perps expose a problem beyond matching. The real boundary is between divergent external observations and ordered market state. Lyquor could make it explicit—but what evidence should a certified price update require?
 
-On Lyquor, the instance side can connect to external markets, while the network side turns validated results into ordered state updates. This lets builders package market operations as deployable Lyquid applications.
-
-This makes market operations more than an exchange's internal backend: they can become financial application modules that builders deploy and reuse.
+https://www.moorelabsxyz.dev/blog/2026-07-14-tradexyz-lyquor-market-operations-layer
 
 ## Chinese
 
-trade[XYZ] 让外部 venue 与交易引擎之间的市场运营层变得可见：定价、oracle 验证、风险参数和生命周期 action。
+trade[XYZ] 说明，24/7 传统资产永续合约面对的不只有撮合问题。真正困难的边界，是各节点可能不同的外部观测与有序共享状态之间的转换。Lyquor 可以把这条边界显式化——但一条 certified price update 至少应该携带哪些证据？
 
-在 Lyquor 上，instance 侧连接外部市场，network 侧把验证结果转化为有序的状态更新，让开发者可以将市场运营能力构建为可部署的 Lyquid applications。
-
-这意味着，市场运营不再只是交易平台内部的后台系统，也可以成为独立构建和复用的金融应用模块。
-
-Original blog post:
-
-https://www.moorelabsxyz.dev/blog/2026-07-14-tradexyz-lyquor-market-operations-layer
+https://www.moorelabsxyz.dev/zh-Hans/blog/2026-07-14-tradexyz-lyquor-market-operations-layer
