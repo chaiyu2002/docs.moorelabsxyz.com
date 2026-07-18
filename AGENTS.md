@@ -25,8 +25,19 @@
 - 站点配置位于 `docusaurus.config.js`。
 - 侧边栏配置位于 `sidebars.js`。
 
+## 博客内容与静态资源
+
+- Blog frontmatter 使用的所有 tags 必须预先定义在 `blog/tags.yml`。
+- 中英文版本应保持 slug、日期、tags、封面图片等元数据一致。
+- 修改文章标题时，同步检查对应的中文版本和 `x-posts/` 内容。
+- 社交分享封面优先使用 1200×630 的 JPG；无透明度需求时不要使用大体积 PNG。
+- JPG 建议使用约 85 的质量，并通常控制在 300 KiB 以内。
+- `static/` 中的图片会原样发布，不要依赖 GitHub Pages 或社交平台优化源文件。
+- 转换或重命名图片后，更新所有 locale 的 frontmatter 引用，并检查是否仍有旧文件名引用。
+
 ## 修改前后注意事项
 
 - 修改文档、博客、Docusaurus 配置、主题文件或依赖后，运行 `yarn build`。
+- 如果任务明确要求不构建、只做格式检查，至少运行 `git diff --check`，并使用 `rg` 检查旧资源引用。
 - 不要提交 `node_modules/`、`build/` 等生成目录。
 - 尽量保持变更范围小，不做无关的格式化或重构。

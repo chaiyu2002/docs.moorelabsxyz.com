@@ -45,3 +45,23 @@ options:
   label: Options
   permalink: /options
   description: Options market structure and product notes
+
+trade-xyz:
+  label: "trade[XYZ]"
+  permalink: /trade-xyz
+  description: trade[XYZ] market structure and operations notes
+
+oracles:
+  label: Oracles
+  permalink: /oracles
+  description: Oracle design, pricing, and data-validation notes
+
+trading:
+  label: Trading
+  permalink: /trading
+  description: Trading systems and market-structure notes
+
+hip-3:
+  label: HIP-3
+  permalink: /hip-3
+  description: HIP-3 market deployment and operations notes
