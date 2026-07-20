@@ -20,6 +20,8 @@ keywords: [lyquor, tradeXYZ, 市场运营, oracle, 传统资产永续合约]
 
 <!-- truncate -->
 
+![外部市场观测经过验证与排序后写入共享市场状态](/img/blog/tradexyz-market-operations-layer.jpg)
+
 ## trade[XYZ] 揭示的是运营问题
 
 [trade\[XYZ\] 架构文档](https://docs.trade.xyz/)将 XYZ 描述为一个 HIP-3 DEX：它定义可交易市场、预言机数据源、杠杆上限和其他市场参数；Hyperliquid 负责交易执行与结算；trade[XYZ] 界面只是访问 XYZ 市场的一种方式。

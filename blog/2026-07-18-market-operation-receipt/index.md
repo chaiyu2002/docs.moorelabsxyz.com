@@ -25,6 +25,8 @@ versioned policy -> certified decision -> ordered state transition
 
 <!-- truncate -->
 
+![Multiple observations bound into a terminal receipt before an ordered state update](/img/blog/market-operation-receipt.jpg)
+
 ## A Receipt Is More Than a Log Entry
 
 Our [previous market-operations analysis](/blog/2026-07-14-tradexyz-lyquor-market-operations-layer) ended with a question: what minimum evidence and fallback policy should a market update carry before it can affect risk or settlement? The prototype turned that question into an executable state machine for one `BTC/USD` index-price update.
