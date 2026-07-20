@@ -47,3 +47,8 @@ options:
   label: 期权
   permalink: /options
   description: 期权市场结构与产品记录
+
+oracles:
+  label: 预言机
+  permalink: /oracles
+  description: 预言机设计、定价与数据验证记录
