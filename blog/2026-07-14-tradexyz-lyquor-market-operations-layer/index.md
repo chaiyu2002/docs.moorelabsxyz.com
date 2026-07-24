@@ -20,6 +20,8 @@ external observations -> application validation -> certified call
 
 <!-- truncate -->
 
+![External market observations passing through validation and sequencing into shared market state](/img/blog/tradexyz-market-operations-layer.jpg)
+
 ## trade[XYZ] Reveals an Operations Problem
 
 The [trade\[XYZ\] architecture documentation](https://docs.trade.xyz/) describes XYZ as a HIP-3 DEX that defines market listings, oracle sources, leverage limits, and other market parameters. Hyperliquid handles trades, execution, and settlement, while the trade[XYZ] interface is only one way to access XYZ markets.
