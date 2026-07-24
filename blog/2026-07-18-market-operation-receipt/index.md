@@ -3,7 +3,7 @@ slug: /2026-07-18-market-operation-receipt
 title: "07-18 What Makes a Market Update Auditable?"
 date: 2026-07-18
 authors: [andy]
-tags: [lyquor, architecture, oracles]
+tags: [lyquor, architecture, oracles, auditability]
 description: "What a market-operation receipt must prove, and what a Lyquor prototype reveals when compared with a single-operator coordination service."
 image: /img/blog/market-operation-receipt.jpg
 keywords: [lyquor, market operation receipt, certified call, oracle, market operations]

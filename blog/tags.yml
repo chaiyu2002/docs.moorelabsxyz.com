@@ -65,3 +65,8 @@ hip-3:
   label: HIP-3
   permalink: /hip-3
   description: HIP-3 market deployment and operations notes
+
+auditability:
+  label: Auditability
+  permalink: /auditability
+  description: Verifiable decisions, evidence, receipts, and state transitions

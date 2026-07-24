@@ -67,3 +67,8 @@ hip-3:
   label: HIP-3
   permalink: /hip-3
   description: HIP-3 市场部署与运营记录
+
+auditability:
+  label: 可审计性
+  permalink: /auditability
+  description: 可验证的决策、证据、回执与状态转换
